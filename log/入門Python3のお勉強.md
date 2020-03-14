@@ -19,8 +19,9 @@ Out[103]: -10
     - FIFO → append()とpop(0)
     - LIFO → append()とpop(-1)
 - __here__ 4章　Pyの皮
+    - while、forループ後にelseでbreakチェックできる。
+    - zip関数を使うと複数シーケンスを並列に処理できる。
     - 
-
 # まだ分からないこと
 - なし
 
