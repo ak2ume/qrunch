@@ -1,5 +1,6 @@
 # 更新ログ
 - 2020/Mar./22 新規エントリ (3章まで)
+- 2020/Mar./28 新規エントリ (5章まで)
 
 # 環境
 - 書籍：[Visual Studio Code実践ガイド 最新コードエディタを使い倒すテクニック][book]
@@ -23,12 +24,43 @@
   - Opt(Alt)+Shift+ドラッグ : 矩形選択する。
 - __done__ 3章　ビューとコマンドパレット
   - エクスプローラビュー上で未保存のファイルの右クリックメニューから「保存済みと比較」できる。
-- __here__ 4章　Gitとの連携
+- __done__ 4章　Gitとの連携
+  - GitLensとGit History
+- __done__ 5章　デバッグ機能
+  - デバッグアダプタプロトコル(DAP)に従うデバッグアダプタによってデバッグ機能を利用できる
+    - [74thさんによるデバッガ実装状況まとめ][debugger_implement_status]
+    - [森下篤著『VisualStudioCodeデバッグ技術』][book_debug]
+  - F11はMission Controlでデスクトップ表示に割り当てていたのでstep inできない。
+    →システム環境設定でMission Controlの機能を切った。
+  - breakpoint
+    - 通常breakpoint : F9 or 行番号左をクリック
+    - inline breakpoint : 複数処理行内の設定したい場所でShift+F9
+    - 条件付きbreakpoint : 右クリックメニュー
+      - EXPRESSON : if文の中身を記述
+  - WATCH
+    - 任意の評価式を入力できる。
+  - DEBUG CONSOLE
+    - 評価式で変数を確認したり、関数を実行したりできる。
+    - 指定行でログの出力を行える。→print文デバッグしなくていい!!
+      - 行番号左側を右クリックして「add logpoint」
+  - launch.json
+    - "name" : デバッグビューに表示される設定名
+    - "type" : 拡張機能が指定する名称。READMEやテンプレート、スニペットから流用する。
+    - "request" : "launch"(プログラム起動) or "attach"(既存プロセスにアタッチ)
+    - "program" : ランタイムプログラムで実行するソースコード
+    - "args" : "program"実行時の引数
+    - "env" : 実行時の環境変数
+- __here__ 6章　そのほかの機能
+  - 
 
 # まだ分からないこと
 - なし
 
 # reference
 - [Visual Studio Code実践ガイド 最新コードエディタを使い倒すテクニック][book]
+- [74thさんによるデバッガ実装状況まとめ][debugger_implement_status]
+- [森下篤著『VisualStudioCodeデバッグ技術』][book_debug]
 
 [book]: https://www.amazon.co.jp/Visual-Studio-Code%E5%AE%9F%E8%B7%B5%E3%82%AC%E3%82%A4%E3%83%89-%E2%80%94%E2%80%94-%E6%9C%80%E6%96%B0%E3%82%B3%E3%83%BC%E3%83%89%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%82%92%E4%BD%BF%E3%81%84%E5%80%92%E3%81%99%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-ebook/dp/B084SS63L4/ref=pd_rhf_gw_p_img_2?_encoding=UTF8&psc=1&refRID=6P5JAMF7DD64GKZ2C35B
+[debugger_implement_status]: https://74th.github.io/vscode-debug-specs/
+[book_debug]: https://www.amazon.co.jp/Visual-Studio-Code%E3%83%87%E3%83%90%E3%83%83%E3%82%B0%E6%8A%80%E8%A1%93-%E6%8A%80%E8%A1%93%E3%81%AE%E6%B3%89%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%EF%BC%88NextPublishing%EF%BC%89-%E6%A3%AE%E4%B8%8B-ebook/dp/B07KXGNVS2/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=
