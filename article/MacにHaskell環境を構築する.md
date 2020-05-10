@@ -1,4 +1,5 @@
 # 更新ログ
+- 2020/May./10 HIEの参考リンクを追記
 - 2020/May./05 HIEの導入について追記
 - 2020/May./05 新規エントリ
 
@@ -86,6 +87,9 @@ Amazon S3 サービスが見つからない?
 (2020/May/05 追記)
 VS CodeでHaskell Language ServerをDisableにしたり、インストール中にMacを触らないようにしたりして、何回かretryしたら通った。
 何が決め手だったか不明だが、とりあえず先には進めたのでよし!!
+(2020/May/10 追記)
+haskell ide engineに関しては、[VS Code と haskell-ide-engine で Haskell 開発環境を構築する][bigmoon]が詳しかった。
+
 
 # まだ分からないこと
 - stack実行時に表示されるwarningを消したい。stackが古い?
@@ -95,7 +99,9 @@ VS CodeでHaskell Language ServerをDisableにしたり、インストール中�
 - [【2019版】 Mac に Haskell の環境構築をして stack で helloworld するまで][qiita]
 - [MacでHaskellの環境を構築する][noozui]
 - [vscodeでのhaskell開発環境作成][ngiy]
+- [VS Code と haskell-ide-engine で Haskell 開発環境を構築する][bigmoon]
 
 [noozui]: https://www.nooozui.com/entry/20191111/1573473976
 [ngiy]: https://ngiy.hatenablog.com/entry/2018/06/06/142147
 [qiita]: https://qiita.com/yusk_1860/items/deeb025953990ac09dce
+[bigmoon]: https://haskell.e-bigmoon.com/hie/vscode.html
