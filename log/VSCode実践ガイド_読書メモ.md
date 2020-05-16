@@ -73,7 +73,19 @@
   - ターミナル
 - __skip__ 7章　リモート開発機能
 - __here__ 8章　カスタマイズ
-  - 
+  - ユーザー設定
+    - GUI設定は歯車アイコンからSettingsを選択
+    - JSON編集はコマンドパレットでopen settings(JSON)
+      - マウスオーバーでポップアップ説明が表示されたり、エラー表示されたりする。
+  - ワークスペース設定(ユーザー設定よりも優先)
+    - GUI設定はユーザー設定画面でタブをワークスペースに切り替え
+    - JSON編集はコマンドパレットでopen workspace settings(JSON)
+  - 言語、拡張子固有の設定
+    - JSON編集のみ。
+    - コマンドパレットでconfigure language specific settings
+    - 言語を選択(選択肢に出てこない場合は言語の拡張機能をインストールする)
+      - 言語はコマンドパレットでchange language modeを呼び出したときの括弧内の表示
+    - 拡張子と言語の関連付けはJSONで"files.associations"
 
 # まだ分からないこと
 - なし
